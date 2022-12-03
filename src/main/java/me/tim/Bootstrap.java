@@ -14,7 +14,7 @@ import java.io.File;
  */
 public class Bootstrap extends Hamster {
     static {
-        File f = new File("Territorien/default.ter");
+        File f = new File("Territorien/weg_finden.ter");
         if (!f.exists()) {
             System.err.println("Default Terrain couldn't be loaded!");
         }
@@ -22,7 +22,7 @@ public class Bootstrap extends Hamster {
     }
 
     public Bootstrap() {
-        super(1, 1, 1, 1);
+        super(0, 3, 2, 1);
         new TimAlgorithm(this).run();
     }
 
